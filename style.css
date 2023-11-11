@@ -1,0 +1,62 @@
+body {
+  height: 100vh !important;
+}
+
+.shadow {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+input {
+  background: #f1f2f2 !important;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s !important;
+}
+
+input:hover {
+  background: #e1e3e4 !important;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px #0f6dea solid !important;
+  box-shadow: none !important;
+}
+
+label::after {
+  background: none !important;
+  color: #0f6dea !important;
+}
+
+.form-control:focus ~ label {
+  color: #0f6dea !important;
+}
+
+.kanan {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+i {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 1;
+  content: url(eye.svg);
+}
+
+.eye-slash {
+  content: url(eye-slash.svg);
+}
+
+.tombol:disabled {
+  background-color: rgb(163, 163, 163) !important;
+  color: rgb(84, 84, 84) !important;
+  border: 0 !important;
+}
+
+@media screen and (max-width: 750px){
+  .login img{
+    content: url(https://www.static-src.com/siva/asset/10_2023/loginregis_mobile_original_2.png);
+  }
+}
+  
